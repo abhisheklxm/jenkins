@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('Stage 1') {
-            echo $env.BRANCH_NAME
+            steps{
+                echo $env.BRANCH_NAME
+            }
         }
     }
 }
